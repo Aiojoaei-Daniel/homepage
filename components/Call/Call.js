@@ -8,7 +8,7 @@ export const Call = () => {
     >
       <div
         className="absolute w-2/4 g1"
-        style={{ top: "1850px", left: "185px" }}
+        style={{ top: "2050px", left: "185px" }}
       >
         <h1 className="mb-6 text-5xl font-bold">Talk to someone one-on-one!</h1>
         <p className="w-10/12 text-lg">
@@ -17,7 +17,7 @@ export const Call = () => {
           your area. (Open Monday - Friday 9 am. to 5 pm.)
         </p>
       </div>
-      <div className="absolute flex w-3/4 g2" style={{ top: "2050px" }}>
+      <div className="absolute flex w-3/4 g2" style={{ top: "2250px" }}>
         <div className="flex flex-col items-center justify-center w-2/5 p-10 mr-10 bg-white rounded-md shadow-lg h-96">
           <h1 className="mb-3 text-3xl font-bold">Call Us</h1>
           <h1 className="mb-5 text-3xl font-bold">346-703-0051</h1>

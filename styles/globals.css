@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --clr-yellow-dark: #edb331;
+}
+
 html,
 body {
   height: 100%;

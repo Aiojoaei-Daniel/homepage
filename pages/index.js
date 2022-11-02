@@ -10,7 +10,7 @@ import { Footer } from "./../components/Footer/Footer";
 
 export default function Home() {
   return (
-    <h1 className="h-full">
+    <div className="h-full">
       <Hero />
       <Cta />
       <Search />
@@ -20,6 +20,6 @@ export default function Home() {
       <Container />
       <Newsletter />
       <Footer />
-    </h1>
+    </div>
   );
 }

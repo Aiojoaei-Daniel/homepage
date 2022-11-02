@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowIcon } from "../../ArrowIcon";
 
 export const Resources = () => {
   return (
@@ -47,7 +48,14 @@ export const Resources = () => {
         </div>
       </body>
       <footer className="flex justify-center">
-        <button>BROWSE ALL RESOURCES</button>
+        <button
+          type="button"
+          className="flex mt-2 text-sm font-bold rounded bg-none"
+          style={{ color: "#edb331" }}
+        >
+          BROWSE ALL RESOURCES
+          <ArrowIcon />
+        </button>
       </footer>
     </div>
   );

@@ -4,7 +4,10 @@ import { Tagline } from "./Tagline/Tagline";
 
 export default function Hero() {
   return (
-    <div className="h-full bg-[url('/bg-hero.png')] bg-center bg-cover">
+    <div
+      style={{ height: "944px" }}
+      className="bg-[url('/bg-hero.png')] bg-center bg-cover"
+    >
       <Navigation />
       <Tagline />
     </div>

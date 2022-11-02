@@ -15,8 +15,9 @@ export const Tagline = () => {
         lives and the lives of others.
       </p>
       <button
+        style={{ backgroundColor: "#edb331" }}
         type="button"
-        className="px-6 py-2 font-bold text-white bg-yellow-400 rounded "
+        className="px-6 py-2 font-bold text-white rounded"
       >
         Get Resources
       </button>

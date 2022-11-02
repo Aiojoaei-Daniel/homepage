@@ -21,7 +21,8 @@ export const Story = () => {
         </p>
         <button
           type="button"
-          className="flex mt-10 font-bold text-yellow-400 rounded bg-none"
+          className="flex mt-10 font-bold rounded bg-none"
+          style={{ color: "#edb331" }}
         >
           FIND OUT MORE
           <ArrowIcon />

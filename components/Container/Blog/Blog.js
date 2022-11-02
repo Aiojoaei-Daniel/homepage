@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowIcon } from "../../ArrowIcon";
 
 export const Blog = () => {
   return (
@@ -12,7 +13,7 @@ export const Blog = () => {
           width: "445px",
           height: "353px",
           left: "250px",
-          top: "4050px",
+          top: "4250px",
         }}
       >
         <p className="pl-4 mb-4 text-xs font-bold text-red-600">
@@ -25,7 +26,14 @@ export const Blog = () => {
           “If you could kick the person in the pants responsible for most of
           your trouble, you wouldn’t sit for a month.” ~ Theodore Roosevelt
         </p>
-        <button>READ MORE</button>
+        <button
+          type="button"
+          className="flex mt-2 text-sm font-bold rounded bg-none"
+          style={{ color: "#edb331" }}
+        >
+          READ MORE
+          <ArrowIcon />
+        </button>
       </div>
       <div className="h-full w-4/6 bg-[url('/blog-bg.png')] bg-center bg-cover">
         da

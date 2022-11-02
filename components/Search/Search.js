@@ -15,11 +15,11 @@ export const Search = () => {
       <div className="flex flex-col items-center justify-center group h-1/2">
         <div className="flex justify-between w-4/5 g1 h-11">
           <input
-            value="Dallas"
+            defaultValue="Dallas"
             className="w-1/4 px-5 font-medium text-white border-2 border-white rounded bg-inherit bg-none"
           />
           <input
-            value="75001"
+            defaultValue="75001"
             className="w-1/4 px-5 ml-2 font-medium text-white border-2 border-white rounded bg-inherit bg-none"
           />
           <select className="w-1/4 px-5 ml-2 font-medium text-white border-2 border-white rounded bg-inherit bg-none">
@@ -31,16 +31,15 @@ export const Search = () => {
         </div>
         <div className="flex justify-between w-4/5 mt-2 g2 h-11">
           <select
-            // multiple
-
             data-placeholder="Select Insurance"
             className="w-4/5 px-5 font-medium text-white border-2 border-white rounded bg-inherit bg-none"
           >
-            <option>Dan</option>
+            <option>Select Insurance: </option>
           </select>
           <button
+            style={{ backgroundColor: "#edb331" }}
             type="button"
-            className="w-1/5 px-6 py-2 ml-2 font-bold text-white bg-yellow-400 rounded"
+            className="w-1/5 px-6 py-2 ml-2 font-bold text-white rounded"
           >
             Search
           </button>
