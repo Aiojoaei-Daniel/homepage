@@ -1,4 +1,4 @@
-import { Logo } from "../../Logo";
+import { Logo } from "../../Icons/Logo";
 
 const navigation = [
   { name: "ABOUT", href: "#" },

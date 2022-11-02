@@ -1,6 +1,6 @@
 import React from "react";
-import { Logo } from "../Logo";
-import { FooterLogos } from "./../FooterLogos";
+import { Logo } from "../Icons/Logo";
+import { FooterLogos } from "../Icons/FooterLogos";
 
 export const Footer = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowIcon } from "../../ArrowIcon";
+import { ArrowIcon } from "../../Icons/ArrowIcon";
 
 export const Resources = () => {
   return (
