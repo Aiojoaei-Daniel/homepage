@@ -1,0 +1,9 @@
+export { default as Hero } from "./Hero/Hero";
+export { default as Cta } from "./CTA/Cta";
+export { default as Search } from "./Search/Search";
+export { default as Story } from "./Story/Story";
+export { default as Call } from "./Call/Call";
+export { default as Testimonials } from "./Testimonials/Testimonials";
+export { default as Container } from "./Container/Container";
+export { default as Newsletter } from "./Newsletter/Newsletter";
+export { default as Footer } from "./Footer/Footer";

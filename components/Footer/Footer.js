@@ -2,72 +2,94 @@ import React from "react";
 import { Logo } from "../Icons/Logo";
 import { FooterLogos } from "../Icons/FooterLogos";
 
+const NAVIGATION_BTNS = [
+  {
+    TITLE: "About",
+    OPTIONS: [
+      "About Us",
+      "Meet the Staff",
+      "Meet our Founders",
+      "Board of Directors",
+      "Newsroom",
+      "Testimonials",
+      "Blog",
+    ],
+  },
+  {
+    TITLE: "Education",
+    OPTIONS: ["Literature", "Podcast", "Videos", "Speaking", "Education Tool"],
+  },
+  {
+    TITLE: "Resources",
+    OPTIONS: [
+      "Mental Health",
+      "Addiction",
+      "Crisis",
+      "Literature",
+      "Counselors",
+      "Eating Disorder",
+      "Veteran / First Responder",
+      "Community Services",
+    ],
+  },
+  {
+    TITLE: "Get Involved",
+    OPTIONS: [
+      "Fundraising",
+      "Special Events",
+      "Admin / Marketing",
+      "Creative",
+      "Careers",
+      "Task Force",
+    ],
+  },
+];
+
+const FOOTER_TEXT = {
+  ROW_1: "33114 Forest West Street | Magnolia, TX 77354 | Phone: (346)703-0051",
+  ROW_2: "Copyright © 2022 Mosaics of Mercy | Website by ",
+  ROW_2_BOLD: "TRUTH WEB",
+};
+
 export const Footer = () => {
   return (
-    <div style={{ height: "600px" }}>
-      <main
+    <footer style={{ height: "600px" }}>
+      <nav
         style={{ height: "450px", backgroundColor: "white" }}
         className="flex justify-center"
       >
-        <div className="flex flex-col w-1/5 ml-10 mt-28 g1" style={{}}>
-          <h1 className="mb-4 font-bold">About</h1>
-          <p className="mb-1">About Us</p>
-          <p className="mb-1">Meet the Staff</p>
-          <p className="mb-1">Meet our Founders</p>
-          <p className="mb-1">Board of Directors</p>
-          <p className="mb-1">Newsroom</p>
-          <p className="mb-1">Testimonials</p>
-          <p className="mb-1">Blog</p>
-        </div>
-        <div className="flex flex-col w-1/5 mt-28 g1" style={{}}>
-          <h1 className="mb-4 font-bold">Education</h1>
-          <p className="mb-1">Literature</p>
-          <p className="mb-1">Podcast</p>
-          <p className="mb-1">Videos</p>
-          <p className="mb-1">Speaking</p>
-          <p className="mb-1">Education Tool</p>
-        </div>
-        <div className="flex flex-col w-1/5 g1 mt-28" style={{}}>
-          <h1 className="mb-4 font-bold">Resources</h1>
-          <p className="mb-1">Mental Health</p>
-          <p className="mb-1">Addiction</p>
-          <p className="mb-1">Crisis</p>
-          <p className="mb-1">Literature</p>
-          <p className="mb-1">Counselors</p>
-          <p className="mb-1">Eating Disorder</p>
-          <p className="mb-1">Veteran / First Responder</p>
-          <p className="mb-1">Community Services</p>
-        </div>
-        <div className="flex flex-col w-1/5 g1 mt-28" style={{}}>
-          <h1 className="mb-4 font-bold">Get Involved</h1>
-          <p className="mb-1">Fundraising</p>
-          <p className="mb-1">Special Events</p>
-          <p className="mb-1">Admin / Marketing</p>
-          <p className="mb-1">Creative</p>
-          <p className="mb-1">Careers</p>
-          <p className="mb-1">Task Force</p>
-        </div>
-      </main>
-      <footer
+        {NAVIGATION_BTNS.map((item) => (
+          <section
+            key={item.TITLE}
+            className="flex flex-col w-1/5 ml-10 mt-28 g1"
+            style={{}}
+          >
+            <h1 className="mb-4 font-bold cursor-pointer">{item.TITLE}</h1>
+            {item.OPTIONS.map((option) => (
+              <p key={item} className="mb-1 cursor-pointer">
+                {option}
+              </p>
+            ))}
+          </section>
+        ))}
+      </nav>
+      <div
         className="flex"
         style={{ height: "150px", backgroundColor: "#F0F0EF" }}
       >
-        <div className="mt-10 ml-44">
+        <figure className="mt-10 ml-44">
           <Logo />
-        </div>
-        <div className="flex flex-col justify-center w-1/2 ml-10">
-          <p>
-            33114 Forest West Street | Magnolia, TX 77354 | Phone: (346)
-            703-0051
-          </p>
+        </figure>
+        <section className="flex flex-col justify-center w-1/2 ml-10">
+          <p>{FOOTER_TEXT.ROW_1}</p>
           <p className="mt-2 text-xs">
-            Copyright © 2022 Mosaics of Mercy | Website by <b>TRUTH WEB</b>
+            {FOOTER_TEXT.ROW_2} <b>{FOOTER_TEXT.ROW_2_BOLD}</b>
           </p>
-        </div>
-        <div className="flex items-center w-2/12 ml-20 logos">
+        </section>
+        <figure className="flex items-center w-2/12 ml-20 logos">
           <FooterLogos />
-        </div>
-      </footer>
-    </div>
+        </figure>
+      </div>
+    </footer>
   );
 };

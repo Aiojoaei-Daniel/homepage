@@ -1,4 +1,4 @@
-import Hero from "../components/Hero/Hero";
+import { Hero } from "../components/Hero/Hero";
 import { Cta } from "./../components/CTA/Cta";
 import { Search } from "./../components/Search/Search";
 import { Story } from "./../components/Story/Story";

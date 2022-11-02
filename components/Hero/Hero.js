@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "./Navigation/Navigation";
 import { Tagline } from "./Tagline/Tagline";
 
-export default function Hero() {
+export const Hero = () => {
   return (
     <div
       style={{ height: "944px" }}
@@ -12,4 +12,4 @@ export default function Hero() {
       <Tagline />
     </div>
   );
-}
+};
