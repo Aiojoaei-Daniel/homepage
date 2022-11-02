@@ -1,8 +1,12 @@
 import React from "react";
+import { ArrowIcon } from "./../ArrowIcon";
 
 export const Story = () => {
   return (
-    <div className="flex items-center bg-white justify-evenly h-96">
+    <div
+      className="flex items-center bg-white justify-evenly"
+      style={{ height: "493px" }}
+    >
       <h1 className="w-2/6 text-4xl font-bold text-black">
         Our mission is to help members of our community navigate mental health
         and addiction recovery.
@@ -17,9 +21,10 @@ export const Story = () => {
         </p>
         <button
           type="button"
-          className="mt-10 font-bold text-yellow-400 rounded bg-none "
+          className="flex mt-10 font-bold text-yellow-400 rounded bg-none"
         >
           FIND OUT MORE
+          <ArrowIcon />
         </button>
       </div>
     </div>

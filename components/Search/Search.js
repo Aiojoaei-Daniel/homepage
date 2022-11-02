@@ -34,7 +34,7 @@ export const Search = () => {
             // multiple
 
             data-placeholder="Select Insurance"
-            className="w-4/5 px-5 font-medium text-white border-2 border-white rounded  bg-inherit bg-none"
+            className="w-4/5 px-5 font-medium text-white border-2 border-white rounded bg-inherit bg-none"
           >
             <option>Dan</option>
           </select>
